@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:padding="5dp">
+
+    <!-- Profile Section -->
+    <LinearLayout
+        android:id="@+id/profile_section"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/bg_profile2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/foto_profile"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siswanto"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/profile_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bandung, Indonesia"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <!-- Interests Section -->
+    <LinearLayout
+        android:id="@+id/interests_section"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/profile_section"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/icon_section">
+
+        <TextView
+            android:id="@+id/interests_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi Diri"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/interests_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya adalah seseorang yang sangat menikmati aktivitas fisik di luar ruangan, seperti trekking, walking, running, dan hiking. Aktivitas ini bukan hanya hobi, tetapi juga cara saya untuk menjaga kesehatan dan menyegarkan pikiran. Di samping itu, saya memiliki mimpi dan cita-cita untuk menjadi seorang data analis. Saya tertarik dengan dunia analisis data karena saya percaya bahwa data memiliki kekuatan untuk memberikan wawasan yang berharga dan membantu dalam pengambilan keputusan yang lebih baik. Saya sedang berusaha untuk mengembangkan keterampilan dan pengetahuan yang diperlukan untuk mencapai tujuan ini."
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <!-- Icon Section -->
+    <LinearLayout
+        android:id="@+id/icon_section"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/icon1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Icon 1"/>
+
+        <ImageButton
+            android:id="@+id/icon2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon2"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Icon 2"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageButton
+            android:id="@+id/icon3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon3"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Icon 3"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageButton
+            android:id="@+id/icon4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon4"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Icon 4"
+            android:layout_marginLeft="25dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
